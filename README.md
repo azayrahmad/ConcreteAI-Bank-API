@@ -28,10 +28,11 @@ To access the Swagger API documentation, visit [http://localhost:3000/docs](http
 
 # What needs improvement
 
-- Supertokens need to connect to User database and manage session
-- Unit tests need to work
+- Supertokens needs to connect to User database and manage sessions.
+- Unit tests need to work.
 - Docker compose needs to configure MongoDB Replica Set.
+- Auto debit needs to be implemented.
 
 # Conclusion
 
-This assignment is ultimately unfinished as I am still learning Supertokens and Docker. Thank you for your understanding.
+This assignment is ultimately unfinished as my experience is mainly in Microsoft Tech Stack and I am still learning Supertokens and Docker. I am eager to learn if accepted at ConcreteAI. Thank you for your understanding.

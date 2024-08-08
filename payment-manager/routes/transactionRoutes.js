@@ -66,40 +66,6 @@ async function routes(fastify, options) {
     },
     transactionController.withdraw
   );
-
-  fastify.get(
-    "/transactions/:accountId",
-    {
-      schema: {
-        description: "Get transactions for an account",
-        tags: ["transaction"],
-        summary: "Get transactions",
-        params: {
-          type: "object",
-          properties: {
-            accountId: { type: "string" },
-          },
-        },
-        response: {
-          200: {
-            description: "Successful response",
-            type: "array",
-            items: {
-              type: "object",
-              properties: {
-                id: { type: "string" },
-                amount: { type: "number" },
-                timestamp: { type: "string" },
-                toAddress: { type: "string" },
-                status: { type: "string" },
-              },
-            },
-          },
-        },
-      },
-    },
-    transactionController.getTransactions
-  );
 }
 
 module.exports = routes;
