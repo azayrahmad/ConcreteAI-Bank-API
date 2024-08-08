@@ -35,4 +35,4 @@ To access the Swagger API documentation, visit [http://localhost:3000/docs](http
 
 # Conclusion
 
-This assignment is ultimately unfinished as my experience is mainly in Microsoft Tech Stack and I am still learning Supertokens and Docker. I am eager to learn if accepted at ConcreteAI. Thank you for your understanding.
+This assignment is ultimately unfinished as my experience is mainly in Microsoft Tech Stack and I am still learning Supertokens and Docker which unfortunately not enough considering the time limit. I am eager to learn if accepted at ConcreteAI. Thank you for your understanding.
