@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  account-manager:
+    build:
+      context: ./account-manager
+    ports:
+      - '3000:3000'
+    environment:
+      DATABASE_URL: 'mongodb://mongo:27017/Concrete-AI-Bank-API-db'
+    depends_on:
+      - mongo
+
+  payment-manager:
+    build:
+      context: ./payment-manager
+    ports:
+      - '3001:3001'
+    environment:
+      DATABASE_URL: 'mongodb://mongo:27017/Concrete-AI-Bank-API-db'
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
