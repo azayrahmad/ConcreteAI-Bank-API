@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "supertokens-node": "^20.0.1"
+  }
+}
